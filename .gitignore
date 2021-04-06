@@ -1,0 +1,4 @@
+env/
+Api/__pycache__
+Api/migrations/__pycache__
+MansaBankApi/__pycache__

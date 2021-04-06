@@ -1,0 +1,1 @@
+[{"model": "Api.client", "pk": 1, "fields": {"nom_complet": "Coulibaly Issa", "password": "1234"}}, {"model": "Api.client", "pk": 2, "fields": {"nom_complet": "Coulibaly Hamed", "password": "0123"}}]
