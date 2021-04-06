@@ -4,5 +4,5 @@ from .models import Client
 class ClientSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Client
-        fields = ['url', 'nom_complet', 'password']
+        fields = ['url', 'nom_complet', 'phone', 'password']
         

@@ -1,1 +1,1 @@
-[{"model": "Api.client", "pk": 1, "fields": {"nom_complet": "Coulibaly Issa", "password": "1234"}}, {"model": "Api.client", "pk": 2, "fields": {"nom_complet": "Coulibaly Hamed", "password": "0123"}}]
+[{"model": "Api.client", "pk": 1, "fields": {"nom_complet": "Coulibaly Issa", "phone": "0504522224", "password": "1234"}}, {"model": "Api.client", "pk": 2, "fields": {"nom_complet": "Coulibaly Hamed", "phone": "0769094443", "password": "0123"}}, {"model": "Api.client", "pk": 3, "fields": {"nom_complet": "Coulibaly Fatim", "phone": "0545708252", "password": "5555"}}]

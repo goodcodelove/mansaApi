@@ -26,7 +26,7 @@ SECRET_KEY = '#y*1ebr*c&4c$8ieul0*_t$u0azgw-h_@cz@fh*flr^7nt)@cd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mansabankapi.herokuapp.com']
+ALLOWED_HOSTS = ['mansabankapi.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'Api.apps.ApiConfig',
-    'rest_framework'
+    'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -122,7 +123,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -131,3 +134,4 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
